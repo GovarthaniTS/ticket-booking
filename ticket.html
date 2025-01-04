@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket Booking</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <header>
+        <h1>Online Ticket Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#bus">Bus Tickets</a></li>
+                <li><a href="#railway">Railway Tickets</a></li>
+                <li><a href="#movie">Movie Tickets</a></li>
+                <li><a href="#temple">Temple Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bus" class="ticket-section">
+        <h2>Bus Ticket Booking</h2>
+        <form id="busForm">
+            <label for="busFrom">From: </label>
+            <input type="text" id="busFrom" required>
+            <label for="busTo">To: </label>
+            <input type="text" id="busTo" required>
+            <button type="submit">Book Bus Ticket</button>
+        </form>
+        <p id="busResult"></p>
+    </section>
+
+    <section id="railway" class="ticket-section">
+        <h2>Railway Ticket Booking</h2>
+        <form id="railwayForm">
+            <label for="trainFrom">From: </label>
+            <input type="text" id="trainFrom" required>
+            <label for="trainTo">To: </label>
+            <input type="text" id="trainTo" required>
+            <button type="submit">Book Railway Ticket</button>
+        </form>
+        <p id="railwayResult"></p>
+    </section>
+
+    <section id="movie" class="ticket-section">
+        <h2>Movie Ticket Booking</h2>
+        <form id="movieForm">
+            <label for="movieName">Movie Name: </label>
+            <input type="text" id="movieName" required>
+            <label for="movieDate">Date: </label>
+            <input type="date" id="movieDate" required>
+            <button type="submit">Book Movie Ticket</button>
+        </form>
+        <p id="movieResult"></p>
+    </section>
+
+    <section id="temple" class="ticket-section">
+        <h2>Temple Ticket Booking</h2>
+        <form id="templeForm">
+            <label for="templeName">Temple Name: </label>
+            <input type="text" id="templeName" required>
+            <label for="templeDate">Date: </label>
+            <input type="date" id="templeDate" required>
+            <button type="submit">Book Temple Ticket</button>
+        </form>
+        <p id="templeResult"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Ticket Booking</p>
+    </footer>
+
+    <script src="ticket.js "></script>
+</body>
+</html>
